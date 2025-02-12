@@ -5,6 +5,8 @@
 #define led2 21
 #define led3 19
 #define led4 18
+#define led5 5
+#define led6 17
 
 #define DHTTYPE DHT11   
 DHT dht(DHTPIN, DHTTYPE);
@@ -15,6 +17,8 @@ void setup() {
   pinMode(led2, OUTPUT);
   pinMode(led3, OUTPUT);
   pinMode(led4, OUTPUT);
+  pinMode(led5, OUTPUT);
+  pinMode(led6, OUTPUT);
 
   dht.begin();
 }
@@ -39,6 +43,8 @@ void loop() {
     digitalWrite(led2, LOW);
     digitalWrite(led3, LOW);
     digitalWrite(led4, LOW);
+    digitalWrite(led5, LOW);
+    digitalWrite(led6, LOW);
   }
 
   else if(t > 21.5 && t<= 21.7){
@@ -46,6 +52,8 @@ void loop() {
     digitalWrite(led2, LOW);
     digitalWrite(led3, LOW);
     digitalWrite(led4, LOW);
+    digitalWrite(led5, LOW);
+    digitalWrite(led6, LOW);
   }
 
   else if(t > 21.7 && t <= 22.2){
@@ -53,6 +61,8 @@ void loop() {
     digitalWrite(led2, HIGH);
     digitalWrite(led3, LOW);
     digitalWrite(led4, LOW);
+    digitalWrite(led5, LOW);
+    digitalWrite(led6, LOW);
   }
   
   else if(t > 22.2 && t <= 22.7){
@@ -60,6 +70,8 @@ void loop() {
     digitalWrite(led2, HIGH);
     digitalWrite(led3, HIGH);
     digitalWrite(led4, LOW);
+    digitalWrite(led5, LOW);
+    digitalWrite(led6, LOW);
   }
 
   
@@ -68,5 +80,25 @@ void loop() {
     digitalWrite(led2, HIGH);
     digitalWrite(led3, HIGH);
     digitalWrite(led4, HIGH);
+    digitalWrite(led5, LOW);
+    digitalWrite(led6, LOW);
+  }
+
+    else if(t > 23.2 && t <= 23.7){
+    digitalWrite(led1, HIGH);
+    digitalWrite(led2, HIGH);
+    digitalWrite(led3, HIGH);
+    digitalWrite(led4, HIGH);
+    digitalWrite(led5, HIGH);
+    digitalWrite(led6, LOW);
+  }
+
+    else if(t > 23.7){
+    digitalWrite(led1, HIGH);
+    digitalWrite(led2, HIGH);
+    digitalWrite(led3, HIGH);
+    digitalWrite(led4, HIGH);
+    digitalWrite(led5, HIGH);
+    digitalWrite(led6, HIGH);
   }
 }  
