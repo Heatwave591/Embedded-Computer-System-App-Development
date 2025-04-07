@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="413dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/design_default_color_primary_dark"
+        android:padding="4dp"
+        android:text="\nAnirudhhan Raghuraman\n Lab 4"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#673AB7"
+        android:text="HIGHER"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonGrid"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#673AB7"
+        android:text="LOWER"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/radioButtonGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        app:alignmentMode="alignBounds"
+        app:columnCount="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rowCount="5"
+        app:useDefaultMargins="false">
+
+        <!-- Row 1 -->
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="4"
+            app:layout_row="0" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="5"
+            app:layout_row="0" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="6"
+            app:layout_row="0" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="7"
+            app:layout_row="0" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="8"
+            app:layout_row="0" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="9"
+            app:layout_row="0" />
+
+        <!-- Row 2 -->
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton13"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton14"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton15"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="4"
+            app:layout_row="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton16"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="5"
+            app:layout_row="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton17"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="6"
+            app:layout_row="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton18"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="7"
+            app:layout_row="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton19"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="8"
+            app:layout_row="1" />
+
+        <RadioButton
+            android:id="@+id/radioButton20"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="9"
+            app:layout_row="1" />
+
+        <!-- Row 3 -->
+        <RadioButton
+            android:id="@+id/radioButton21"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <RadioButton
+            android:id="@+id/radioButton22"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <RadioButton
+            android:id="@+id/radioButton23"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <RadioButton
+            android:id="@+id/radioButton24"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <RadioButton
+            android:id="@+id/radioButton25"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="4"
+            app:layout_row="2" />
+
+        <RadioButton
+            android:id="@+id/radioButton26"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="5"
+            app:layout_row="2" />
+
+        <RadioButton
+            android:id="@+id/radioButton27"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="6"
+            app:layout_row="2" />
+
+        <RadioButton
+            android:id="@+id/radioButton28"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="7"
+            app:layout_row="2" />
+
+        <RadioButton
+            android:id="@+id/radioButton29"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="8"
+            app:layout_row="2" />
+
+        <RadioButton
+            android:id="@+id/radioButton30"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="9"
+            app:layout_row="2" />
+
+        <!-- Row 4 -->
+        <RadioButton
+            android:id="@+id/radioButton31"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <RadioButton
+            android:id="@+id/radioButton32"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <RadioButton
+            android:id="@+id/radioButton33"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <RadioButton
+            android:id="@+id/radioButton34"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <RadioButton
+            android:id="@+id/radioButton35"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="4"
+            app:layout_row="3" />
+
+        <RadioButton
+            android:id="@+id/radioButton36"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="5"
+            app:layout_row="3" />
+
+        <RadioButton
+            android:id="@+id/radioButton37"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="6"
+            app:layout_row="3" />
+
+        <RadioButton
+            android:id="@+id/radioButton38"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="7"
+            app:layout_row="3" />
+
+        <RadioButton
+            android:id="@+id/radioButton39"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="8"
+            app:layout_row="3" />
+
+        <RadioButton
+            android:id="@+id/radioButton40"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="9"
+            app:layout_row="3" />
+
+        <!-- Row 5 -->
+        <RadioButton
+            android:id="@+id/radioButton41"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <RadioButton
+            android:id="@+id/radioButton42"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <RadioButton
+            android:id="@+id/radioButton43"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <RadioButton
+            android:id="@+id/radioButton44"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="3"
+            app:layout_row="4" />
+
+        <RadioButton
+            android:id="@+id/radioButton45"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="4"
+            app:layout_row="4" />
+
+        <RadioButton
+            android:id="@+id/radioButton46"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="5"
+            app:layout_row="4" />
+
+        <RadioButton
+            android:id="@+id/radioButton47"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="6"
+            app:layout_row="4" />
+
+        <RadioButton
+            android:id="@+id/radioButton48"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="7"
+            app:layout_row="4" />
+
+        <RadioButton
+            android:id="@+id/radioButton49"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="8"
+            app:layout_row="4" />
+
+        <RadioButton
+            android:id="@+id/radioButton50"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="2dp"
+            android:buttonTint="#4CAF50"
+            android:checked="false"
+            android:clickable="false"
+            app:layout_column="9"
+            app:layout_row="4" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
